@@ -124,7 +124,7 @@
           <a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm font-medium transition-colors" href="#features">Product</a>
           <a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm font-medium transition-colors" href="#highlights">Solutions</a>
           <a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm font-medium transition-colors" href="#testimonials">Resources</a>
-          <a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm font-medium transition-colors" href="#">About us</a>
+          <a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm font-medium transition-colors" href="#footer-aboutus">About us</a>
         </div>
         <button class="btn-primary flex min-w-[100px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 text-sm font-medium leading-normal tracking-[0.015em]">
           <span class="truncate">Get Started</span>
@@ -416,62 +416,114 @@
 </section>
 </div>
 </main>
-<footer class="bg-slate-100 border-t border-slate-200">
-<div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-12">
-<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-8">
-<div class="col-span-1 md:col-span-3 lg:col-span-2">
-<div class="flex items-center gap-3 mb-3">
-  <img src="favicon.ico" alt="SPAZIGO Logo" class="h-7 w-7" />
-  <h2 class="text-xl font-semibold text-[var(--color-text-primary)]" style="font-family: var(--font-heading)"> SPAZIGO</h2>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPAZIGO - Logistics Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #2563eb;
+            --color-secondary: #1e40af;
+            --color-text-primary: #1f2937;
+            --color-text-secondary: #6b7280;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .footer-link:hover {
+            color: var(--color-primary) !important;
+            transform: translateX(5px);
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Your existing page content would go here -->
 
-<p class="text-sm text-[var(--color-text-secondary)]">Powering the future of logistics, one shipment at a time.</p>
-</div>
-<div>
-<h3 class="text-sm font-semibold text-[var(--color-text-primary)] uppercase tracking-wider mb-3" style="font-family: var(--font-heading)">Product</h3>
-<nav class="flex flex-col gap-2">
-<a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm transition-colors" href="#">Features</a>
-<a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm transition-colors" href="#">Integrations</a>
-<a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm transition-colors" href="#">Pricing</a>
-<a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm transition-colors" href="#">API</a>
-</nav>
-</div>
-<div>
-<h3 class="text-sm font-semibold text-[var(--color-text-primary)] uppercase tracking-wider mb-3" style="font-family: var(--font-heading)">Company</h3>
-<nav class="flex flex-col gap-2">
-<a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm transition-colors" href="#">About Us</a>
-<a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm transition-colors" href="#">Careers</a>
-<a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm transition-colors" href="#">Contact Us</a>
-<a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm transition-colors" href="#">Blog</a>
-</nav>
-</div>
-<div>
-<h3 class="text-sm font-semibold text-[var(--color-text-primary)] uppercase tracking-wider mb-3" style="font-family: var(--font-heading)">Resources</h3>
-<nav class="flex flex-col gap-2">
-<a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm transition-colors" href="#">Documentation</a>
-<a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm transition-colors" href="#">Support Center</a>
-<a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm transition-colors" href="#">Case Studies</a>
-<a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm transition-colors" href="#">Whitepapers</a>
-</nav>
-</div>
-</div>
-<div class="border-t border-slate-300 pt-8 flex flex-col md:flex-row justify-between items-center">
-<p class="text-[var(--color-text-secondary)] text-sm">© 2024 SPAZIGO. All rights reserved.</p>
-<div class="flex gap-4 mt-4 md:mt-0">
-<a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] transition-colors" href="#">
-<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
-<path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
-</svg>
-</a>
-<a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] transition-colors" href="#">
-<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
-<path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
-</svg>
-</a>
-</div>
-</div>
-</div>
-</footer>
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- About Us Section -->
+                <div class="space-y-4 md:pr-8">
+                    <h3 class="text-xl font-bold border-b-2 border-blue-500 pb-2 inline-block">About Us</h3>
+                    <p class="text-gray-300">
+                        SPAZIGO is revolutionizing logistics management with cutting-edge technology solutions. 
+                        We specialize in intelligent supply chain optimization, real-time tracking, and automated 
+                        workflow solutions that help businesses achieve operational excellence.
+                    </p>
+                    <p class="text-gray-300 mt-4">
+                        Founded in 2020, we've grown to serve over 500 clients across India with our innovative 
+                        logistics platform that streamlines operations and reduces costs.
+                    </p>
+                    <div class="flex items-center space-x-4 pt-4">
+                      <img src="favicon.ico" alt="Company logo" class="h-16">
+                      <p class="text-gray-400 text-sm">© 2024 SPAZIGO. All rights reserved.</p>
+                    </div>
+
+                </div>
+
+                <!-- Contact Us Section -->
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold border-b-2 border-blue-500 pb-2 inline-block">Contact Us</h3>
+                    <div class="space-y-4 text-gray-300">
+                        <div class="flex items-center">
+                            <span class="material-icons mr-3 text-blue-400">location_on</span>
+                            <p>123 Logistics Tower, Mumbai, India 400001</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="material-icons mr-3 text-blue-400">email</span>
+                            <p>contact@spazigo.com</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="material-icons mr-3 text-blue-400">call</span>
+                            <p>+91 9876543210</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <h4 class="font-medium mb-3">Connect With Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-blue-600 p-2 rounded-full social-icon">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a4feb4bb-ffb5-4abc-b8c3-24e361cf90d4.png" alt="Facebook social media icon" width="20" height="20">
+                            </a>
+                            <a href="#" class="bg-blue-400 p-2 rounded-full social-icon">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6701e58a-6d0e-447f-ada7-aa834ff716bd.png" alt="Twitter social media icon" width="20" height="20">
+                            </a>
+                            <a href="#" class="bg-blue-700 p-2 rounded-full social-icon">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f831215e-4eec-4f88-8832-723383984a84.png" alt="LinkedIn social media icon" width="20" height="20">
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-end">
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-blue-400 text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 text-sm">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
 </div>
 </div>
 </body></html>
