@@ -111,7 +111,7 @@
 <div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
   <div class="layout-container flex h-full grow flex-col">
     <header class="bg-white shadow-md sticky top-0 left-0 w-full z-50">
-  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center relative">
 
     <!-- Logo -->
     <div class="flex items-center gap-3 text-[var(--color-text-primary)]">
@@ -119,7 +119,7 @@
       <h2 class="text-2xl font-semibold tracking-tight" style="font-family: var(--font-heading)">SPAZIGO</h2>
     </div>
 
-    <!-- Hamburger Toggle (Mobile) -->
+    <!-- Hamburger Toggle -->
     <input type="checkbox" id="menu-toggle" class="peer hidden">
     <label for="menu-toggle" class="md:hidden cursor-pointer">
       <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -136,17 +136,18 @@
         <span class="truncate">Get Started</span>
       </button>
     </nav>
-  </div>
 
-  <!-- Mobile Nav (Visible when toggled) -->
-  <nav class="peer-checked:flex hidden flex-col bg-white px-6 py-4 md:hidden border-t gap-2">
-    <a href="#features" class="text-sm font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-primary)]">Features</a>
-    <a href="#highlights" class="text-sm font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-primary)]">Solutions</a>
-    <a href="#testimonials" class="text-sm font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-primary)]">Resources</a>
-    <button class="btn-primary flex h-10 px-5 items-center justify-center rounded-lg text-sm font-medium w-full">
-      <span class="truncate">Get Started</span>
-    </button>
-  </nav>
+    <!-- 👇 Mobile Nav (must be inside the same parent) -->
+    <nav class="absolute top-full left-0 w-full bg-white shadow-md hidden peer-checked:flex flex-col px-6 py-4 md:hidden border-t z-40">
+      <a href="#features" class="py-2 text-sm font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-primary)]">Features</a>
+      <a href="#highlights" class="py-2 text-sm font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-primary)]">Solutions</a>
+      <a href="#testimonials" class="py-2 text-sm font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-primary)]">Resources</a>
+      <button class="btn-primary flex h-10 px-5 items-center justify-center rounded-lg text-sm font-medium w-full mt-2">
+        <span class="truncate">Get Started</span>
+      </button>
+    </nav>
+
+  </div>
 </header>
     <main class="flex flex-1 flex-col items-center py-8 md:py-12 lg:py-16">
       <div class="layout-content-container flex flex-col w-full max-w-6xl px-4 md:px-6 lg:px-8">
