@@ -121,11 +121,10 @@
 
       <nav class="flex flex-1 justify-end gap-6">
         <div class="flex items-center gap-6">
-          <a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm font-medium transition-colors" href="#features">features</a>
+          <a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm font-medium transition-colors" href="#features">Features</a>
           <a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm font-medium transition-colors" href="#highlights">Solutions</a>
           <a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm font-medium transition-colors" href="#testimonials">Resources</a>
-          <a class="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] text-sm font-medium transition-colors" href="#footer-aboutus">About us</a>
-        </div>
+         </div>
         <button class="btn-primary flex min-w-[100px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 text-sm font-medium leading-normal tracking-[0.015em]">
           <span class="truncate">Get Started</span>
         </button>
@@ -151,7 +150,7 @@
         <!-- ============================ -->
 <!-- Key Features Section Start -->
 <!-- ============================ -->
-<section id="features" class="mb-24 md:mb-32">
+<section id="features" class="mb-12 md:mb-16">
 
   <!-- Section Heading -->
   <h2 class="text-3xl md:text-4xl font-semibold text-center ...">Key Features</h2>
@@ -159,20 +158,20 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mt-12">
     
     <!-- Feature 1: Real-Time Tracking -->
-    <div class="floating-card icon-card transition-all transform hover:scale-105 hover:shadow-2xl hover:z-10">
-      <div class="text-[var(--color-primary)]" data-icon="Package" data-size="36px" data-weight="regular">
-        <!-- Icon SVG -->
-        <svg fill="currentColor" height="36px" viewBox="0 0 256 256" width="36px" xmlns="http://www.w3.org/2000/svg">
-          <path d="..."></path>
-        </svg>
-      </div>
-      <h3 class="text-lg font-semibold text-[var(--color-text-primary)]" style="font-family: var(--font-heading)">
-        Real-time cargo space availability
-      </h3>
-      <p class="text-sm text-[var(--color-text-secondary)]">
-        Spazigo provides real-time information on available cargo space, helping users find and book what they need instantly.
-      </p>
-    </div>
+  
+  <div class="floating-card icon-card transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl hover:z-10 p-6 text-center">
+  <div class="w-full aspect-[16/10] rounded-lg overflow-hidden mb-4">
+    <img src="image/real_time_cargo.jpg" alt="Real-Time Cargo" loading="lazy" class="w-full h-full object-cover max-h-[160px]" />
+  </div>
+
+  <h3 class="text-lg font-semibold text-[var(--color-text-primary)] mb-1" style="font-family: var(--font-heading)">
+    Real-time cargo space availability
+  </h3>
+
+  <p class="text-sm text-[var(--color-text-secondary)]">
+    Spazigo provides real-time information on available cargo space, helping users find and book what they need instantly.
+  </p>
+</div>
 
     <!-- Feature 2: Fleet Management -->
     <div class="floating-card icon-card transition-all transform hover:scale-105 hover:shadow-2xl hover:z-10">
@@ -231,80 +230,72 @@
 <!-- ================================ -->
 <!-- Project Highlights Section Start -->
 <!-- ================================ -->
+<!-- Project Highlights Section Start -->
 <section id="highlights" class="...">
-
-  <!-- Section Heading -->
   <h2 class="text-3xl md:text-4xl font-semibold text-center text-[var(--color-text-primary)] mb-10 md:mb-12" style="font-family: var(--font-heading)">
-    Project Highlights
+    Solution
   </h2>
 
-  <!-- Project Cards Grid -->
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-
+    
     <!-- Project Card 1 -->
-    <div class="floating-card flex flex-col gap-4">
-      <!-- Project Image -->
+    <div class="floating-card flex flex-col gap-4 group transition-shadow hover:shadow-xl hover:shadow-gray-300 duration-300">
       <div
-        class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover rounded-lg"
+        class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover rounded-lg transition-transform duration-300 ease-in-out transform group-hover:scale-105"
         style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDB9jv_4NSxt1nQ2OXoDTgSyxq7rbslEctCdDpbmazeGyNIRzhth5otNRMLBmelN6vwiIovy5BDkrghQhbId5iRANQyaSXhT7RrVZsiF4RHREzXTrzzYx4bCEEPaL6ogtAgK4iQ_wedjT3RHdpn7VGCmER94MX_I2KuF6tbhQqU1l11uvsYmQLNQq9E8x4Ye8BGPQPbAarT_OUaFzKBKPU4gSjmex7DoUoK5YsUkQUOmwj3Sg-YSDVy2wFh6dHSzj6IalbxPF50qo");'>
       </div>
-
-      <!-- Project Text -->
       <div>
         <h3 class="text-lg font-semibold text-[var(--color-text-primary)] mb-1" style="font-family: var(--font-heading)">
-          Optimizing Warehouse Operations
+          Bridging the Logistics Gap for MSMEs
         </h3>
         <p class="text-sm text-[var(--color-text-secondary)]">
-          SPAZIGO helped a major retailer reduce warehouse processing time by 20% through optimized workflows and real-time inventory management.
+          Spazigo helps small businesses by sharing space in partially filled freight containers, cutting costs 
+          and improving service reliability and transparency, which traditional systems lack.
         </p>
       </div>
     </div>
 
     <!-- Project Card 2 -->
-    <div class="floating-card flex flex-col gap-4">
-      <!-- Project Image -->
+    <div class="floating-card flex flex-col gap-4 group transition-shadow hover:shadow-xl hover:shadow-gray-300 duration-300">
       <div
-        class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover rounded-lg"
+        class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover rounded-lg transition-transform duration-300 ease-in-out transform group-hover:scale-105"
         style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAj5XesO3Sp-Tjwkg5K9Zp6-fvhAlqFzm37XdaN5F69EVVv_C2A13BuDfA4PjnfaPPAkWp4PLDQuM1DIL_xJjeIhxwQddaWvsr_Mko-olwoAe1PC1mLUlRKFv3debZocUH-CpcI3bSL486YuUP6PkS5ZANgFKnAvJLE7XLaU3ZSCcXoMBl5bqOzvERdZqLtsaoXGybvb-16U1SkP8JYySPVzDm2-ZZGCZ368Gt_aOPjhimB6n53S9YibdLyS-oviuqhCO66OSyzEnI");'>
       </div>
-
-      <!-- Project Text -->
       <div>
         <h3 class="text-lg font-semibold text-[var(--color-text-primary)] mb-1" style="font-family: var(--font-heading)">
-          Enhancing Delivery Efficiency
+          Logistics Service Providers
         </h3>
         <p class="text-sm text-[var(--color-text-secondary)]">
-          A leading logistics provider improved delivery efficiency by 15% using SPAZIGO's route optimization and real-time tracking features.
+          Monetize unused container space and expand customer reach without extra marketing. 
+          Enjoy streamlined operations via digital booking and support, fostering trust with verified profiles. 
         </p>
       </div>
     </div>
 
     <!-- Project Card 3 -->
-    <div class="floating-card flex flex-col gap-4">
-      <!-- Project Image -->
+    <div class="floating-card flex flex-col gap-4 group transition-shadow hover:shadow-xl hover:shadow-gray-300 duration-300">
       <div
-        class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover rounded-lg"
+        class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover rounded-lg transition-transform duration-300 ease-in-out transform group-hover:scale-105"
         style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCyZw2dKRZROo6PWYm73rNR8cfLNmz5fUv0W3HijkZS-utVOV87ek7GuHmdyPZvXyW-6VtWxltVv19X0PMb0hOsZOmz442XBfXuMW5CNVA3pwC53QyzdTHUFgynrZMSFLDw6V0WvcnEpZqzZ80_O2t7ZZs3f7y947U1h6QAwWwvNLyajLgjg_5QNL9CwZ03cD3zxEFOlA4NNVUB6uA5T0wsf7B7CkDbsCqMUPLcdalvLpaCASXAzl88KfZrEEc9Fjxg-cBem3FHW7A");'>
       </div>
-
-      <!-- Project Text -->
       <div>
         <h3 class="text-lg font-semibold text-[var(--color-text-primary)] mb-1" style="font-family: var(--font-heading)">
-          Improving Package Handling
+          Traders
         </h3>
         <p class="text-sm text-[var(--color-text-secondary)]">
-          A global shipping company enhanced package handling accuracy by 10% with SPAZIGO's automated sorting and tracking system.
+          Affordable shipping by booking only needed space. Access multiple verified LSPs on one platform with transparent pricing and real-time availability, 
+          plus end-to-end visibility and communication.
         </p>
       </div>
     </div>
 
   </div>
 </section>
-<!-- ============================== -->
 <!-- Project Highlights Section End -->
 <!-- ============================== -->
 
 <section id="testimonials" class="...">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mt-12"></div>
 <h2 class="text-3xl md:text-4xl font-semibold text-center text-[var(--color-text-primary)] mb-10 md:mb-12" style="font-family: var(--font-heading)">
                 What Our Clients Say
               </h2>
