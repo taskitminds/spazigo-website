@@ -19,13 +19,13 @@
   <title>SPAZIGO</title>
 
   <!-- Favicon (empty base64 placeholder) -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}" />
 
 
 
   <!-- Custom Tailwind styles using :root variables -->
  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 </head>
 
@@ -37,7 +37,7 @@
 
     <!-- Logo -->
     <div class="flex items-center gap-3 text-[var(--color-text-primary)]">
-      <img src="favicon.ico" alt="SPAZIGO Logo" class="h-8 w-8" />
+      <img src="{{ url_for('static', filename='favicon.ico') }}" alt="SPAZIGO Logo" class="h-8 w-8" />
       <h2 class="text-2xl font-semibold tracking-tight" style="font-family: var(--font-heading)">SPAZIGO</h2>
     </div>
 
@@ -102,7 +102,7 @@
   
   <div class="floating-card icon-card transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl hover:z-10 p-6 text-center">
   <div class="w-full aspect-[16/10] rounded-lg overflow-hidden mb-4">
-    <img src="image/real_time_cargo.jpg" alt="Real-Time Cargo" loading="lazy" class="w-full h-full object-cover max-h-[160px]" />
+    <img src="{{ url_for('static', filename='image/real_time_cargo.jpg') }}" alt="Real-Time Cargo" loading="lazy" class="w-full h-full object-cover max-h-[160px]" />
   </div>
 
   <h3 class="text-lg font-semibold text-[var(--color-text-primary)] mb-1" style="font-family: var(--font-heading)">
@@ -117,7 +117,7 @@
     <!-- Feature 2: Fleet Management -->
     <div class="floating-card icon-card transition-all transform hover:scale-105 hover:shadow-2xl hover:z-10">
   <div class="w-full aspect-[16/10] rounded-lg overflow-hidden mb-4">
-    <img src="image/logistic.jpg" alt="Verified LSP" loading="lazy" class="w-full h-full object-cover max-h-[160px]" />
+    <img src="{{ url_for('static', filename='image/logistic.jpg') }}" alt="Verified LSP" loading="lazy" class="w-full h-full object-cover max-h-[160px]" />
   </div>
 
   <h3 class="text-lg font-semibold text-[var(--color-text-primary)]" style="font-family: var(--font-heading)">
@@ -133,7 +133,7 @@
     <!-- Feature 3: Automated Workflows -->
 <div class="floating-card icon-card transition-all transform hover:scale-105 hover:shadow-2xl hover:z-10">
   <div class="w-full aspect-[16/10] rounded-lg overflow-hidden mb-4">
-    <img src="image/communication.jpg" alt="Communication Tools" loading="lazy" class="w-full h-full object-cover max-h-[160px]" />
+    <img src="{{ url_for('static', filename='image/communication.jpg') }}" alt="Communication Tools" loading="lazy" class="w-full h-full object-cover max-h-[160px]" />
   </div>
   <h3 class="text-lg font-semibold text-[var(--color-text-primary)]" style="font-family: var(--font-heading)">
     Built-in communication and booking management tools
@@ -146,7 +146,7 @@
 <!-- Feature 4: Multi-modal Booking -->
 <div class="floating-card icon-card transition-all transform hover:scale-105 hover:shadow-2xl hover:z-10">
   <div class="w-full aspect-[16/10] rounded-lg overflow-hidden mb-4">
-    <img src="image/multi_model.jpg" alt="Multi-modal Booking" loading="lazy" class="w-full h-full object-cover max-h-[160px]" />
+    <img src="{{ url_for('static', filename='image/multi_model.jpg') }}" alt="Multi-modal Booking" loading="lazy" class="w-full h-full object-cover max-h-[160px]" />
   </div>
   <h3 class="text-lg font-semibold text-[var(--color-text-primary)]" style="font-family: var(--font-heading)">
     Multi-modal booking
@@ -235,7 +235,7 @@
    <!-- Project Card 1 -->
 <div class="floating-card flex flex-col gap-4 group transition-shadow hover:shadow-xl hover:shadow-gray-300 duration-300">
   <div class="w-full aspect-[16/10] rounded-lg overflow-hidden mb-4 transition-transform duration-300 ease-in-out transform group-hover:scale-105">
-    <img src="image/easy.jpg" alt="Logistics" loading="lazy" class="w-full h-full object-cover max-h-[160px]" />
+    <img src="{{ url_for('static', filename='image/Easy.jpg') }}" alt="Logistics" loading="lazy" class="w-full h-full object-cover max-h-[160px]" />
   </div>
   <div>
     <h3 class="text-lg font-semibold text-[var(--color-text-primary)] mb-1" style="font-family: var(--font-heading)">
@@ -251,7 +251,7 @@
   <!-- Project Card 2 -->
     <div class="floating-card flex flex-col gap-4 group transition-shadow hover:shadow-xl hover:shadow-gray-300 duration-300">
   <div class="w-full aspect-[16/10] rounded-lg overflow-hidden mb-4 transition-transform duration-300 ease-in-out transform group-hover:scale-105">
-    <img src="image/resource.jpg" alt="Logistics Resources Hub" loading="lazy" class="w-full h-full object-cover max-h-[160px]" />
+    <img src="{{ url_for('static', filename='image/resource.jpg') }}" alt="Logistics Resources Hub" loading="lazy" class="w-full h-full object-cover max-h-[160px]" />
   </div>
   <div>
     <h3 class="text-lg font-semibold text-[var(--color-text-primary)] mb-1" style="font-family: var(--font-heading)">
@@ -266,7 +266,7 @@
     <!-- Project Card 3 -->
     <div class="floating-card flex flex-col gap-4 group transition-shadow hover:shadow-xl hover:shadow-gray-300 duration-300">
   <div class="w-full aspect-[16/10] rounded-lg overflow-hidden mb-4 transition-transform duration-300 ease-in-out transform group-hover:scale-105">
-    <img src="image/tools.jpg" alt="Tools for Smarter Logistics" loading="lazy" class="w-full h-full object-cover max-h-[160px]" />
+    <img src="{{ url_for('static', filename='image/tools.jpg') }}" alt="Tools for Smarter Logistics" loading="lazy" class="w-full h-full object-cover max-h-[160px]" />
   </div>
   <div>
     <h3 class="text-lg font-semibold text-[var(--color-text-primary)] mb-1" style="font-family: var(--font-heading)">
@@ -405,7 +405,59 @@
                 </div>
             </div>
         </div>
-    </footer>
+   <!-- Floating Cargo Box Button -->
+       <div class="cargo-button">
+  <button class="cargo-circle" onclick="toggleChatbot()">
+    <img src="{{ url_for('static', filename='image/chatbot.jpg') }}" alt="Cargo Box" class="cargo-icon" />
+  </button>
+</div>
+
+
+          <!-- Chatbot Panel -->
+<div id="chatbot-panel" class="chatbot-panel hidden">
+  <div class="chatbot-header">
+    <h3>Spazigo Assistant</h3>
+    <button onclick="toggleChatbot()" class="close-btn">×</button>
+  </div>
+  <div class="chatbot-body">
+    <div id="chat-log" class="mb-2">
+      <div class="bot-msg">Hi there! 👋 How can I assist you with logistics today?</div>
+    </div>
+    <input id="user-input" type="text" placeholder="Type a message..." class="w-full border rounded px-3 py-2 text-sm" />
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+  function toggleChatbot() {
+    const panel = document.getElementById('chatbot-panel');
+    panel.classList.toggle('hidden');
+  }
+
+  const input = document.getElementById('user-input');
+  const chatLog = document.getElementById('chat-log');
+
+  input.addEventListener("keydown", async function (e) {
+    if (e.key === "Enter" && input.value.trim() !== "") {
+      const message = input.value;
+      chatLog.innerHTML += `<div class="user-msg">${message}</div>`;
+      input.value = "";
+
+      const res = await fetch("/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message })
+      });
+
+      const data = await res.json();
+      chatLog.innerHTML += `<div class="bot-msg">${data.reply}</div>`;
+      chatLog.scrollTop = chatLog.scrollHeight;
+    }
+  });
+</script>
+        </div>
+
+      </footer>
 </body>
 </html>
 </div>

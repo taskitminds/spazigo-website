@@ -91,3 +91,103 @@ h1, h2, h3, h4, h5, h6 {
 .social-icon:hover {
   transform: scale(1.2);
 }
+
+/* Floating Cargo Button Styles */
+
+.cargo-button {
+  position: fixed;
+  bottom: 1.5rem; /* 24px */
+  right: 1.5rem;
+  z-index: 50;
+}
+
+.cargo-circle {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 9999px;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  padding: 0;
+}
+
+.cargo-circle:hover {
+  transform: scale(1.05);
+}
+
+.cargo-icon {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.cargo-circle:hover .cargo-icon {
+  transform: scale(1.1);
+}
+
+/* Chatbot Panel */
+.chatbot-panel {
+  position: fixed;
+  bottom: 6rem;
+  right: 1.5rem;
+  width: 320px;
+  max-height: 420px;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  overflow: hidden;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hidden class toggle */
+.hidden {
+  display: none;
+}
+
+.chatbot-header {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.chatbot-body {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.bot-msg, .user-msg {
+  background: #f3f4f6;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.user-msg {
+  background: #e0f2fe;
+  text-align: right;
+}
