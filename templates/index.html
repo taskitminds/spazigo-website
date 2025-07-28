@@ -19,7 +19,7 @@
   <title>SPAZIGO</title>
 
   <!-- Favicon (empty base64 placeholder) -->
-  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.png') }}" />
 
 
 
@@ -37,7 +37,7 @@
 
     <!-- Logo -->
     <div class="flex items-center gap-3 text-[var(--color-text-primary)]">
-      <img src="{{ url_for('static', filename='favicon.ico') }}" alt="SPAZIGO Logo" class="h-8 w-8" />
+      <img src="{{ url_for('static', filename='favicon.png') }}" alt="SPAZIGO Logo" class="h-8 w-8" />
       <h2 class="text-2xl font-semibold tracking-tight" style="font-family: var(--font-heading)">SPAZIGO</h2>
     </div>
 
@@ -73,21 +73,31 @@
 </header>
     <main class="flex flex-1 flex-col items-center py-8 md:py-12 lg:py-16">
       <div class="layout-content-container flex flex-col w-full max-w-6xl px-4 md:px-6 lg:px-8">
-        <section class="relative min-h-[500px] md:min-h-[600px] flex flex-col items-center justify-center text-center rounded-2xl overflow-hidden animated-bg p-6 md:p-10 mb-16 md:mb-24">
-          <div class="absolute inset-0 bg-gradient-to-b from-white/30 to-transparent"></div>
-          <div class="relative z-10 flex flex-col gap-6 max-w-3xl">
-            <h1 class="text-[var(--color-text-primary)] text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter" style="font-family: var(--font-heading)">
-              Streamline Your Logistics with SPAZIGO
-            </h1>
-            <p class="text-[var(--color-text-secondary)] text-base md:text-lg leading-relaxed">
-              Revolutionize your supply chain with our innovative platform. From real-time tracking to automated workflows, SPAZIGO empowers businesses to optimize their
-              logistics operations for efficiency and growth.
-            </p>
-            <button class="btn-primary self-center mt-4 flex min-w-[150px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 text-base font-medium leading-normal tracking-[0.015em]">
-              <span class="truncate">Get Started Today</span>
-            </button>
-          </div>
-        </section>
+        <section class="relative min-h-[500px] md:min-h-[600px] flex flex-col items-center justify-center text-center rounded-2xl overflow-hidden p-6 md:p-10 mb-16 md:mb-24">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+    <source src="{{ url_for('static', filename='video/background.mp4') }}" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Optional light overlay (like CEVA) -->
+  <div class="absolute inset-0 bg-black/20 z-10"></div>
+
+  <!-- Foreground content -->
+  <div class="relative z-20 flex flex-col gap-6 max-w-3xl text-white text-center drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">
+  <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight" style="font-family: var(--font-heading)">
+    Streamline Your Logistics with SPAZIGO
+  </h1>
+  <p class="text-white text-base md:text-lg leading-relaxed font-medium">
+    Revolutionize your supply chain with our innovative platform. From real-time tracking to automated workflows, SPAZIGO empowers businesses to optimize their
+    logistics operations for efficiency and growth.
+  </p>
+  <button class="btn-primary self-center mt-4 flex min-w-[150px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 text-base font-medium leading-normal tracking-[0.015em] shadow-lg shadow-black/20">
+    <span class="truncate">Get Started Today</span>
+  </button>
+</div>
+</section>
+
         <!-- ============================ -->
 <!-- Key Features Section Start -->
 <!-- ============================ -->
@@ -355,7 +365,7 @@
                        shared cargo infrastructure.
                     </p>
                     <div class="flex items-center space-x-4 pt-4">
-                      <img src="favicon.ico" alt="Company logo" class="h-16">
+                      <img src="{{ url_for('static', filename='favicon.png') }}" alt="Company logo" class="h-16">
                       <p class="text-gray-400 text-sm">© 2024 SPAZIGO. All rights reserved.</p>
                     </div>
 

@@ -191,3 +191,43 @@ h1, h2, h3, h4, h5, h6 {
   background: #e0f2fe;
   text-align: right;
 }
+
+/* Fullscreen Background Video for Hero Section */
+#bg-video,
+section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Make sure overlay content stays above video */
+.hero-overlay,
+section .relative.z-20 {
+  position: relative;
+  z-index: 2;
+}
+.hero-overlay h1,
+.hero-overlay p {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-overlay h1,
+.hero-overlay p {
+  color: white;
+}
+
+
+/* Optional gradient overlay */
+.hero-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+}
