@@ -37,7 +37,7 @@
 
     <!-- Logo -->
     <div class="flex items-center gap-3 text-[var(--color-text-primary)]">
-      <img src="{{ url_for('static', filename='favicon.png') }}" alt="SPAZIGO Logo" class="h-8 w-8" />
+      <img src="{{ url_for('static', filename='favicon.png') }}" alt="SPAZIGO Logo" class="h-8 w-8 rounded-full object-cover" />
       <h2 class="text-2xl font-semibold tracking-tight" style="font-family: var(--font-heading)">SPAZIGO</h2>
     </div>
 
@@ -365,9 +365,10 @@
                        shared cargo infrastructure.
                     </p>
                     <div class="flex items-center space-x-4 pt-4">
-                      <img src="{{ url_for('static', filename='favicon.png') }}" alt="Company logo" class="h-16">
-                      <p class="text-gray-400 text-sm">© 2024 SPAZIGO. All rights reserved.</p>
-                    </div>
+  <img src="{{ url_for('static', filename='favicon.png') }}" alt="Company logo" class="h-16 w-16 rounded-full object-cover" />
+  <p class="text-gray-400 text-sm">© 2024 SPAZIGO. All rights reserved.</p>
+</div>
+
 
                 </div>
 
