@@ -1,4 +1,3 @@
-
 <html lang="en" class="scroll-smooth">
 <head>
   <!-- Character encoding -->
@@ -81,7 +80,7 @@
   </video>
 
   <!-- Optional light overlay (like CEVA) -->
-  <div class="absolute inset-0 bg-black/20 z-10"></div>
+  <div class="absolute inset-0 bg-black/20 z-10"></div>   
 
   <!-- Foreground content -->
   <div class="relative z-20 flex flex-col gap-6 max-w-3xl text-white text-center drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">
@@ -91,10 +90,7 @@
   <p class="text-white text-base md:text-lg leading-relaxed font-medium">
     Revolutionize your supply chain with our innovative platform. From real-time tracking to automated workflows, SPAZIGO empowers businesses to optimize their
     logistics operations for efficiency and growth.
-  </p>
-  <button class="btn-primary self-center mt-4 flex min-w-[150px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 text-base font-medium leading-normal tracking-[0.015em] shadow-lg shadow-black/20">
-    <span class="truncate">Get Started Today</span>
-  </button>
+  </p>`
 </div>
 </section>
 
@@ -364,10 +360,6 @@
                       convenience as large corporations by leveraging tech-driven,
                        shared cargo infrastructure.
                     </p>
-                    <div class="flex items-center space-x-4 pt-4">
-  <img src="{{ url_for('static', filename='favicon.png') }}" alt="Company logo" class="h-16 w-16 rounded-full object-cover" />
-  <p class="text-gray-400 text-sm">© 2024 SPAZIGO. All rights reserved.</p>
-</div>
 
 
                 </div>
@@ -392,28 +384,43 @@
 
                     <div class="pt-4">
                         <h4 class="font-medium mb-3">Connect With Us</h4>
-                        <div class="flex space-x-4">
-                            <a href="#" class="bg-blue-600 p-2 rounded-full social-icon">
-                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a4feb4bb-ffb5-4abc-b8c3-24e361cf90d4.png" alt="Facebook social media icon" width="20" height="20">
-                            </a>
-                            <a href="#" class="bg-blue-400 p-2 rounded-full social-icon">
-                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6701e58a-6d0e-447f-ada7-aa834ff716bd.png" alt="Twitter social media icon" width="20" height="20">
-                            </a>
-                            <a href="#" class="bg-blue-700 p-2 rounded-full social-icon">
-                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f831215e-4eec-4f88-8832-723383984a84.png" alt="LinkedIn social media icon" width="20" height="20">
-                            </a>
-                           
-                        </div>
+<div class="flex space-x-4">
+  
+  <!-- Facebook -->
+  <a href="#" class="social-icon">
+    <img 
+      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a4feb4bb-ffb5-4abc-b8c3-24e361cf90d4.png" 
+      alt="Facebook" 
+      class="w-8 h-8 rounded-full object-cover" />
+  </a>
+
+  <!-- Twitter -->
+  <a href="#" class="social-icon">
+    <img 
+      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6701e58a-6d0e-447f-ada7-aa834ff716bd.png" 
+      alt="Twitter" 
+      class="w-8 h-8 rounded-full object-cover" />
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="#" class="social-icon">
+    <img 
+      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f831215e-4eec-4f88-8832-723383984a84.png" 
+      alt="LinkedIn" 
+      class="w-8 h-8 rounded-full object-cover" />
+  </a>
+
+</div>
+
                     </div>
                 </div>
             </div>
-
-            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-end">
-                <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#" class="text-gray-400 hover:text-blue-400 text-sm">Privacy Policy</a>
-                    <a href="#" class="text-gray-400 hover:text-blue-400 text-sm">Terms of Service</a>
-                    <a href="#" class="text-gray-400 hover:text-blue-400 text-sm">Sitemap</a>
-                </div>
+<div class="border-t border-gray-700 mt-12 pt-6">
+  <div class="flex justify-between items-center flex-col md:flex-row px-4">
+                  <div class="flex items-center space-x-3 self-start md:self-center">
+  <p class="text-gray-400 text-sm">© 2024 SPAZIGO. All rights reserved.</p>
+</div>
+  
             </div>
         </div>
    <!-- Floating Cargo Box Button -->
@@ -451,7 +458,7 @@
   input.addEventListener("keydown", async function (e) {
     if (e.key === "Enter" && input.value.trim() !== "") {
       const message = input.value;
-      chatLog.innerHTML += `<div class="user-msg">${message}</div>`;
+      chatLog.innerHTML += <div class="user-msg">${message}</div>;
       input.value = "";
 
       const res = await fetch("/chat", {
@@ -461,7 +468,7 @@
       });
 
       const data = await res.json();
-      chatLog.innerHTML += `<div class="bot-msg">${data.reply}</div>`;
+      chatLog.innerHTML += <div class="bot-msg">${data.reply}</div>;
       chatLog.scrollTop = chatLog.scrollHeight;
     }
   });
