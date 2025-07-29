@@ -463,7 +463,7 @@
   input.addEventListener("keydown", async function (e) {
     if (e.key === "Enter" && input.value.trim() !== "") {
       const message = input.value;
-      chatLog.innerHTML += <div class="user-msg">${message}</div>;
+      chatLog.innerHTML += `<div class="user-msg">${message}</div>`;
       input.value = "";
 
       const res = await fetch("/chat", {
@@ -473,7 +473,7 @@
       });
 
       const data = await res.json();
-      chatLog.innerHTML += <div class="bot-msg">${data.reply}</div>;
+      chatLog.innerHTML += `<div class="bot-msg">${data.reply}</div>`;
       chatLog.scrollTop = chatLog.scrollHeight;
     }
   });
